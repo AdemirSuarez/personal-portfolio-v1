@@ -1,0 +1,8 @@
+@import url(./vars.css);
+
+.App {
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 90vh;
+  font-size: 62.5%;
+}

@@ -1,0 +1,77 @@
+@import "../../vars.css";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  z-index: 2;
+  margin: 0 10%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 87px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    border-radius: 5px;
+    padding: 24px 35px;
+    background-color: var(--color-secondary);
+  }
+}
+
+.menuBtn,
+.closeBtn {
+  height: 48px;
+  width: 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.menuOpen {
+  display: none;
+}
